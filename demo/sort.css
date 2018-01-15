@@ -1,0 +1,41 @@
+.table {width:100%; font-family:sans-serif; border-collapse:collapse; border:1px solid #d2d2d2;}
+.table th { text-align:left; padding:4px 8px; font-size:90%; }
+.table td { border-top:1px solid #d2d2d2; padding:4px 8px;}
+
+.table tr:hover th { cursor:pointer; 
+-webkit-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none; 
+}
+.table tr:hover td { cursor:pointer; background:#f8f8f8; 
+}
+
+.collapse {display:none;}
+
+.sort-indicator {  
+  display: inline-block; width: 0; height: 0; 
+  position:relative; top:-3px;
+  border-top: 4px solid #aaa;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 0;
+}
+.sort-desc {
+  border-top: 0;  
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 4px solid orange;
+}
+
+.sort-asc {
+  border-top: 4px solid orange;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 0;
+}
+
+.sr-only { 
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden;
+  clip: rect(0,0,0,0);
+}

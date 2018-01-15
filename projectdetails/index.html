@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    CatchIt
+  </title>
+</head>
+<body>
+  <h1>CatchIt</h1>
+  <h4>By Carolyn Bergdolt, Jamie Maher, Troy Prince, Erin Turley </h4>
+  <h4><a href="..">CatchIt Main Page</a></h4>
+  <br>
+  <h2>Project Description</h2>
+  <p>
+    Our application is a job search organizer. Users can create an account and log into their profile, where they will be able to organize their job search information. Jobs that they are interested in will be tracked, and they can update their status for a particular job application. There will be notifications for approaching deadlines, and easy ways to organize potential jobs by location, position, qualifications, etc. The user can also keep track of contacts related to each position and keep notes.
+
+    When a user is on a job search website such as LinkedIn or Indeed, they can input the URL into the app and the information for the job posting will be filled into the app. If they are on a different website, they can still fill in the fields manually.
+  </p>
+  <h2>Utility</h2>
+  <p>
+    As we have been going along in the job-search process, it has been difficult at times to keep track of applications we have completed through various job boards. There is not always overlap between these websites, and sites do not always allow you to update the status of your application. There is not currently a website that fulfills the functionalities we are looking for-- external job board sites are mainly concerned with listing jobs, while we will allow a user to keep track of their applications and sort by relevant content.
+  </p>
+  <h2>Realness</h2>
+  <p>
+    Our data consists of information about a particular job posting, such as the industry, job title, qualifications, application deadline, etc. It will be scraped from the url given by the user. Data for correspondences/notes will be inputted by the user.
+  </p>
+  <h2>Functionalities</h2>
+  <p>
+    We will be able to insert/update/delete records in the database through two ways: creating a user&#39;s account and adding a job posting. These records should be able to be edited or removed from the database. The database will also be searchable, as a user can filter job postings by criteria such as location, position type, etc.
+Advanced functions will include scraping the websites based on the URL input and setting up a notification system.
+  </p>
+  <h2>ER Diagram</h2>
+  <img src="ERdiagram.png" alt="ER Diagram" height="75%", width="75%">
+  <h2>Assumptions</h2>
+  <ul>
+    <li>When a user uploads a job posting, it will be saved as both a general posting in the database and as a posting they are interested in. This inheritance ensures the data is not repeated when two users add the same job posting.</li>
+    <li>As we develop, we may add more types of correspondances and more features to our various entities.</li>
+  </ul>
+</body>
+</html>

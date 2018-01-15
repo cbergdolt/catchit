@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>Development Plan</title>
+  </head>
+  
+  <body>
+    <h1>Development Plan</h1>
+    <h3>Relational Schema</h3>
+    <ul>
+      <li>GeneralJobPosting(<u>JobID</u>, JobTitle, Location, Deadline, URL, Source, Other Details)</li> 
+      <ul style="list-style-type:none">
+        <li>FDs: {JobID > URL}</li>
+      </ul>
+      <li>UserJobOfInterest(<u>UserID</u>, <u>JobID</u>, Stage)</li>
+      <li>Notes(<u>UserID</u>, <u>JobID</u>, <u>NoteID</u>, Content)</li>
+      <ul style="list-style-type:none">
+        <li>FDs: {UserID,JobID,NoteID > Content}</li>
+      </ul>
+      <li>User(<u>UserID</u>, Email, Name, Password)</li>
+      <ul style="list-style-type:none">
+        <li>FDs: {Email > Password}</li>
+      </ul>
+      <li>ExpressedInterest(<u>UserID</u>, <u>JobID</u>)</li>
+      <li>Interview(<u>UserID</u>, <u>JobID</u>, <u>CorrespondenceID</u>, Date, Location)</li>
+      <li>Email(<u>UserID</u>, <u>JobID</u>, <u>CorrespondenceID</u>, Recipient, Message)</li>
+      <li>NetworkingEvent(<u>UserID</u>, <u>JobID</u>, <u>CorrespondenceID</u>, EventName, Person, Relationship)</li>
+    </ul>
+    <p>Note: Each relation's keys are underlined.</p>
+
+    <h3>Databases/Software Platforms</h3>
+    <p>SQL, php</p>
+    
+    <h3>Where/How we will get data</h3>
+    <p>LinkedIn, Indeed, other job postings. The information will automatically be parsed, if possible. Otherwise, it is up to the user to input the information from the website into the database tool.</p>
+
+    <h3>Division of Labor</h3>
+    <p>While we expect the division of labor to change on a weekly basis depending on each member&#39;s schedule, the general division of labor will be as follows:</p>
+    <ul>
+      <li>Data entry - Jamie, Erin</li>
+      <li>Data retrieval/displaying - Carolyn, Troy</li>
+    </ul>
+    <p>We expect these roles to be flexible, and also anticipate that we will spend equal amounts of time working on the advanced functionalities.</p>
+
+    <h3>Project Timeline</h3>
+    <table>
+      <tbody>
+	<tr>
+	  <th>Week</th><th>Goal</th>
+	</tr>
+	<tr>
+	  <td>9/25</td><td>Project planning</td>
+	</tr>
+	<tr>
+	  <td>10/2</td><td>Initial database setup and configuration</td>
+	</tr>
+	<tr>
+	  <td>10/9</td><td>Implement basic functionalities (inputting and displaying)</td>
+	</tr>
+	<tr>
+	  <td>10/23</td><td>Complete functionalities (filtering) and front-end</td>
+	</tr>
+	<tr>
+	  <td>10/30</td><td>Initial demo. Begin advanced functionalities</td>
+	</tr>
+	<tr>
+	  <td>11/6</td><td>Web scraping (advanced functionality)</td>
+	</tr>
+	<tr>
+	  <td>11/13</td><td>Notifications (advanced functionality)</td>
+	</tr>
+	<tr>
+	  <td>11/20</td><td>Complete advanced functionalities</td>
+	</tr>
+	<tr>
+	  <td>11/27</td><td>Complete front end, testing, populate with example data</td>
+	</tr>
+	<tr>
+	  <td>12/4</td><td>Complete project, make video</td>
+	</tr>
+	<tr>
+	  <td>12/11</td><td>Submit Completed Project</td>
+	</tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
